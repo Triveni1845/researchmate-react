@@ -2,8 +2,10 @@ from pathlib import Path
 
 DOCS = Path(__file__).parent / 'docs'
 
+
 def calculate(a: float, b: float):
     return {'result': float(a) * float(b)}
+
 
 def search_documents(query: str):
     terms = set(query.lower().split())
@@ -19,3 +21,7 @@ def search_documents(query: str):
             })
 
     return {'matches': hits}
+
+
+if __name__ == "__main__":
+    print(10 + 20)

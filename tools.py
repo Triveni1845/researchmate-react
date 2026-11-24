@@ -4,7 +4,7 @@ DOCS = Path(__file__).parent / "docs"
 
 
 def calculate(a: float, b: float):
-    return {"result": float(a) * float(b)}
+    return {"result": float(a) + float(b)}
 
 
 def search_documents(query: str):
